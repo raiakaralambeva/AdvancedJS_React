@@ -4,11 +4,11 @@ let devFactory = function(name, salary) {
         name: name,
         salary: salary,
         getSalary: function() {
-            return salary;
+            return this.salary;
         },
         increaseSalary: function(incrValue, pass) {
             if (pass == 'abracadabra') {
-                salary += incrValue;
+                this.salary += incrValue;
             }
             else {
                 console.log(`Wrong password! ${this.name}'s salary will not be increased!`);
