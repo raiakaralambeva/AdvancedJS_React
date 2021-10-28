@@ -32,7 +32,7 @@ var transport2 = {
     }
 };
 
-function MyConstructor(data, transport2) {
+function MyConstructor2(data, transport2) {
     this.data = data;
     transport2.on('data', () => {
         console.log(this.data); 
@@ -41,6 +41,6 @@ function MyConstructor(data, transport2) {
 
 
 // called as
-var obj2 = new MyConstructor('goo', transport2);
+var obj2 = new MyConstructor2('goo', transport2);
 
 
